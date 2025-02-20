@@ -13,5 +13,6 @@ RUN pip3 install PyYAML==6.0.1
 COPY feed.py /usr/bin/feed.py
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
